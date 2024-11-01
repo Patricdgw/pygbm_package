@@ -4,7 +4,7 @@ import click
 import matplotlib.pyplot as plt
 
 #from .base import Simulation
-from .geometric_brownian_motion import GBMSimulator
+from .GBM import GBMSimulator
 
 
 # Define a command-line group using the click librarycl
@@ -21,9 +21,9 @@ def cli():
 # Define an option for the volatility coefficient with a default value and a help message
 @click.option('--sigma', default=0.05, help='Volatility coefficient')
 # Define an option for the time step with a default value and a help message
-@click.option('--time', 'T', default=1/252, help='Time step')
+@click.option('--T', default=1/252, help='Time step')
 # Define an option for the number of steps to simulate with a default value and a help message
-@click.option('--steps', 'N', default=252, help='Number of steps to simulate')
+@click.option('--N', default=252, help='Number of steps to simulate')
 # Define an option for the output file
 @click.option('--output', default='gbm_plot.png', help='Output file for the plot')
 # Define the main function that will be executed when the command is run
@@ -35,9 +35,9 @@ def simulate(y0, mu, sigma, T, N, output):
     # Create an instance of the GeometricBrownianMotion class with the provided parameters
     gbm = GBMSimulator(y0, mu, sigma)
     # Simulate the stock prices for the given number of steps
-    prices = gbm.simulate_path(T, N)
+    times, prices = gbm.simulate_path(T, N)
     # Plot the simulated prices
-    plt.plot(prices)
+    plt.plot(times, prices)
     plt.xlabel('Time Steps')
     plt.ylabel('Stock Price')
     plt.title('Geometric Brownian Motion Simulation')

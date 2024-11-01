@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = { file = "LICENSE" }
 authors = [
-    { name = "Patric", email = "p,wd2@cam.ac.uk" },
+    { name = "Patric", email = "pmwd2@cam.ac.uk" },
     ]
 keywords = ["browian"]
 classifiers = [
@@ -23,9 +23,8 @@ classifiers = [
 
 # Runtime dependencies
 dependencies = [
-    "numpy",
-    
-    "matplotlib.pyplot",
+    "numpy",    
+    "matplotlib",
 ]
 
 [project.urls]
@@ -42,4 +41,4 @@ where = ["."]
 
 
 [project.scripts]
-pygbm = "pygbm.cli:main"
+pygbm = "pygbm.cli:cli"

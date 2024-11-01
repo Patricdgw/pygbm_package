@@ -5,4 +5,5 @@ class Simulation:
         self.sigma = sigma
         
 
-    
+    def simulate(self): 
+        raise NotImplementedError("This method should be overridden by subclasses")

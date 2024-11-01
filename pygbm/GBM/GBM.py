@@ -1,7 +1,5 @@
 import numpy as np
-from pygbm.base import Simulation
-
-
+from ..base import Simulation  
 
 import matplotlib as plt
 

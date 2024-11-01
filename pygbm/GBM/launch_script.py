@@ -1,6 +1,6 @@
 
-from geometric_brownian_motion import GBMSimulator
-import matplotlib . pyplot as plt
+from GBM import GBMSimulator
+import matplotlib.pyplot as plt
 # Parameters for GBM
 y0 = 1.0
 mu = 0.05
