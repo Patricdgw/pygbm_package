@@ -2,15 +2,15 @@
 # Import the click library for creating command-line interfaces
 import click
 import matplotlib.pyplot as plt
-
-#from .base import Simulation
-
 from GBM import GBMSimulator
 
 
 # Define a command-line group using the click librarycl
 @click.group()
 def cli():
+     """
+    Command-line interface group for the GBM simulator.
+    """
     pass
 
 # Define a command-line command using the click library
@@ -27,9 +27,22 @@ def cli():
 @click.option('--n', default=252, help='Number of steps to simulate')
 # Define an option for the output file
 @click.option('--output', default='gbm_plot.png', help='Output file for the plot')
-# Define the main function that will be executed when the command is run
-def simulate(y0, mu, sigma, t, n, output):
 
+
+
+
+def simulate(y0, mu, sigma, t, n, output):
+    """
+    Simulates the stock prices using the GBM model and saves the plot to a file.
+
+    Args:
+        y0 (float): Initial stock price.
+        mu (float): Drift coefficient.
+        sigma (float): Volatility coefficient.
+        T (float): Time step.
+        N (int): Number of steps to simulate.
+        output (str): Output file for the plot.
+    """
     # Debugging statements to print the values of the options
     print(f'y0: {y0}, mu: {mu}, sigma: {sigma}, t: {t}, n: {n}, output: {output}')
     
