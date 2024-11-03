@@ -19,8 +19,7 @@ python -m pygbm.GBM.launch_script
 
 ## Documentation
 
-To change
-Link to the [documentation page](https://geometric-brownian-motion-package-test.readthedocs.io/en/latest/).
+https://geometric-brownian-motion-package-test.readthedocs.io/en/latest/
 
 ## Contributing
 
