@@ -8,7 +8,7 @@
 ..    :align: left
 ..    :width: 200px
 
-Company Package
+Geometric Brownian Motion Package
 ===============================================================================
 
 
@@ -19,7 +19,7 @@ Company Package
    :alt: Documentation Status
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/borisbolliet/company_package/blob/main/docs/tutorial.ipynb
+   :target: https://colab.research.google.com/github/Patricdgwme/pygbm_package/blob/master/notebooks/index.ipynb
    :alt: Open In Colab
 
 | *Author*: Patric de Gentile-Williams
@@ -66,7 +66,7 @@ python -m pygbm.GBM.launch_script
 Documentation
 -------------
 
-Visit our `documentation page <https://your-readthedocs-url-here>`_.
+Visit our `documentation page https://geometric-brownian-motion-package-test.readthedocs.io/en/latest/.
 
 Contributing
 ------------
