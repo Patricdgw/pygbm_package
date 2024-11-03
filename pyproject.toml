@@ -28,9 +28,9 @@ dependencies = [
 ]
 
 [project.urls]
-"Documentation" = "https://your-readthedocs-url-here"
-"Source" = "https://github.com/yourusername/companies_package"
-"Issues" = "https://github.com/yourusername/companies_package/issues"
+"Documentation" = "hhttps://geometric-brownian-motion-package-test.readthedocs.io/en/latest/"
+"Source" = "https://github.com/Patricdgw/pygbm_package"
+"Issues" = "https://github.com/Patricdgw/pygbm_package/issues"
 
 
 [tool.setuptools_scm]
