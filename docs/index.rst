@@ -14,8 +14,8 @@ Geometric Brownian Motion Package
 
 
 
-.. image:: https://readthedocs.org/projects/company_package/badge/?version=latest
-   :target: https://company_package.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/pygbm_package/badge/?version=latest
+   :target: https://pygbm_package.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
