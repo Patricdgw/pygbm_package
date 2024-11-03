@@ -1,8 +1,8 @@
 package can be run from either of these two command line calls
 
-pygbm simulate --y0 1.0 --mu 0.05 --sigma 0.2 --T 1.0 --N 100 --output gbm_plot.png
+pygbm simulate --y0 1.0 --mu 0.05 --sigma 0.2 --t 1.0 --n 100 --output gbm_plot.png
 
-python pygbm/GBM/launch_script.py
+python -m pygbm.GBM.launch_script
 
 
 OR 

@@ -1,5 +1,5 @@
 import numpy as np
-from base import pygbm  
+from pygbm.base import pygbm  
 
 import matplotlib as plt
 
@@ -35,14 +35,15 @@ class GBMSimulator(pygbm):
         """
         prices = [self.start_price]
         times = [0]
-        drift = self.mu * T / N
+        dt = T / N
+        drift = (self.mu - 0.5 * self.sigma **2) * dt
         print(f'time: {times[-1]}, price: {prices[-1]}')
         
         for i in range(N):
             # Calculate the random jump component
-            jump = 0.5 * self.sigma * np.random.choice([1, -1]) * np.sqrt(T / N)
+            jump =  self.sigma * np.random.normal(0, np.sqrt(dt))
             times.append(i + 1)
-            prices.append(prices[-1] + drift - jump)
+            prices.append(prices[-1] * np.exp((drift + jump)))
             print(f'time: {times[-1]}, price: {prices[-1]}')
         
         return times, prices    

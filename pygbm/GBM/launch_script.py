@@ -4,7 +4,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from GBM import GBMSimulator
 import matplotlib.pyplot as plt
-#matplotlib.use('TkAgg')
+
 
 # Parameters for GBM
 y0 = 1.0

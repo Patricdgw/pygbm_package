@@ -2,13 +2,13 @@
 # Import the click library for creating command-line interfaces
 import click
 import matplotlib.pyplot as plt
-from GBM import GBMSimulator
+from pygbm.GBM.GBM import GBMSimulator
 
 
 # Define a command-line group using the click librarycl
 @click.group()
 def cli():
-     """
+    """
     Command-line interface group for the GBM simulator.
     """
     pass
