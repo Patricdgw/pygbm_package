@@ -1,9 +1,9 @@
 import numpy as np
-from ..base import Simulation  
+from base import pygbm  
 
 import matplotlib as plt
 
-class GBMSimulator(Simulation):
+class GBMSimulator(pygbm):
     def __init__(self, start_price, mu, sigma):
         super().__init__(start_price, mu, sigma)
 

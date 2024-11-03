@@ -1,6 +1,11 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from GBM import GBMSimulator
 import matplotlib.pyplot as plt
+#matplotlib.use('TkAgg')
+
 # Parameters for GBM
 y0 = 1.0
 mu = 0.05
@@ -16,9 +21,9 @@ simulator = GBMSimulator(y0 , mu , sigma )
 t_values , y_values = simulator.simulate_path(T, N)
 
 # Plot the simulated path
-plt . plot ( t_values , y_values , label ="GBM Path ")
-plt . xlabel (" Time ")
-plt . ylabel ("Y(t)")
-plt . title (" Simulated Geometric Brownian Motion Path ")
-plt . legend ()
-plt . show ()
+plt.plot ( t_values , y_values , label ="GBM Path ")
+plt.xlabel (" Time ")
+plt.ylabel ("Y(t)")
+plt.title (" Simulated Geometric Brownian Motion Path ")
+plt.legend ()
+plt.show ()
